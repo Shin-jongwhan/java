@@ -136,8 +136,42 @@ RUN set -eux; \
 	java --version
 
 # "jshell" is an interactive REPL for Java (see https://en.wikipedia.org/wiki/JShell)
-CMD ["jshell"]
+# CMD ["jshell"]
+
 ```
+### 추가한 Dockerfile 소스코드
+```
+RUN yum -y install vim
+RUN touch ~/.bashrc
+RUN echo -e "alias ll=\"ls -al\"\n\
+alias vi=\"vim\"" \
+>> ~/.bashrc
+RUN source ~/.bashrc
+CMD ["bash"]
+```
+### <br/><br/>
+
+### docker 접속 및 java 테스트
+### hello world
+#### hello_world.java
+```
+class Helloworld {
+    public static void main(String[] args){
+        System.out.println("Hello world");
+    }
+}
+```
+### 컴파일
+```
+$ javac hello_world.java
+```
+### 실행
+```
+$ java Helloworld
+```
+### 실행 결과
+#### ![image](https://user-images.githubusercontent.com/62974484/205968657-d9d1cd9b-2da3-4fb6-8763-a20aa96b18cc.png)
+#### ![image](https://user-images.githubusercontent.com/62974484/205968750-c1a8e08d-2ac0-44a5-b805-1effef1fc5e9.png)
 ### <br/><br/><br/>
 
 
