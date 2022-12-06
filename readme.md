@@ -32,3 +32,10 @@
 - java JVM (Java Virtual Machine) : 가상 컴퓨터라고 생각하면 될 것 같다. 소스 코드는 이 위에서 돌아간다. 소스 코드는 JVM 안에서 돌아가는 것을 보장한다 라는 것이 가장 중요한 특징이다.
 #### ![image](https://user-images.githubusercontent.com/62974484/205826029-17ef51d6-3ed5-4df4-92d3-051cf925cd5d.png)
 #### ![image](https://user-images.githubusercontent.com/62974484/205826562-03b7417f-e8fa-430d-bd86-7ffff28845ec.png)
+### <br/>
+### 그외
+- java EE : 기업용 java 개발 환경
+- java ME : 모바일용 java 개발 환경
+### <br/><br/><br/>
+
+
