@@ -169,7 +169,7 @@ RUN echo -e "if [ -n \"\$force_color_prompt\" ]; then\n\
 fi\n\
 \n\
 if [ \"\$color_prompt\" = yes ]; then\n\
-    PS1='\${debian_chroot:+(\$debian_chroot)}\[\\033[01;32m\]\u@\h\[\\033[00m\]:\[\\033[01;36m\]\w\[\\033[00m\]\n\[\\033[01;33m\]\\\$\[\\033[00m\] '\n\
+    PS1='\${debian_chroot:+(\$debian_chroot)}\[\\033[01;32m\]\u@\h\[\\033[00m\]:\[\\033[01;36m\]\w\[\\033[00m\]\n\[\\033[01;33m\]$\[\\033[00m\] '\n\
 else\n\
     PS1='\${debian_chroot:+(\$debian_chroot)}\u@\h:\w\\\$ '\n\
 fi\n\
