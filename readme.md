@@ -140,12 +140,78 @@ RUN set -eux; \
 
 ```
 ### 추가한 Dockerfile 소스코드
+### \# 이 Dockerfile 에서 echo 안에 묶여 있어도 에러가 나서 따로 빼준다.
 ```
-RUN yum -y install vim
-RUN touch ~/.bashrc
-RUN echo -e "alias ll=\"ls -al\"\n\
+# PS1 settings. split echo because of '#' error
+RUN echo -e "# set variable identifying the chroot you work in (used in the prompt below)\n\
+if [ -z \"\${debian_chroot:-}\" ] && [ -r /etc/debian_chroot ]; then\n\
+    debian_chroot=\$(cat /etc/debian_chroot)\n\
+fi\n" \
+>> ~/.bashrc
+RUN echo -e "# set a fancy prompt (non-color, unless we know we \"want\" color)\n\
+case \"\$TERM\" in\n\
+    xterm-color|*-256color) color_prompt=yes;;\n\
+esac\n" \
+>> ~/.bashrc
+RUN echo -e "# uncomment for a colored prompt, if the terminal has the capability; turned" >> ~/.bashrc
+RUN echo -e "# off by default to not distract the user: the focus in a terminal window" >> ~/.bashrc
+RUN echo -e "# should be on the output of commands, not on the prompt\n" >> ~/.bashrc
+RUN echo -e "force_color_prompt=yes\n" >> ~/.bashrc
+RUN echo -e "# We have color support; assume it's compliant with Ecma-48" >> ~/.bashrc
+RUN echo -e "# (ISO/IEC-6429). (Lack of such support is extremely rare, and such" >> ~/.bashrc
+RUN echo -e "# (ISO/IEC-6429). (Lack of such support is extremely rare, and such" >> ~/.bashrc
+RUN echo -e "if [ -n \"\$force_color_prompt\" ]; then\n\
+    if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then\n\
+    color_prompt=yes\n\
+    else\n\
+    color_prompt=\n\
+    fi\n\
+fi\n\
+\n\
+if [ \"\$color_prompt\" = yes ]; then\n\
+    PS1='\${debian_chroot:+(\$debian_chroot)}\[\\033[01;32m\]\u@\h\[\\033[00m\]:\[\\033[01;36m\]\w\[\\033[00m\]\n\[\\033[01;33m\]\\\$\[\\033[00m\] '\n\
+else\n\
+    PS1='\${debian_chroot:+(\$debian_chroot)}\u@\h:\w\\\$ '\n\
+fi\n\
+unset color_prompt force_color_prompt\n" \
+>> ~/.bashrc
+RUN echo -e "# If this is an xterm set the title to user@host:dir\n\
+case \"\$TERM\" in\n\
+xterm*|rxvt*)\n\
+    PS1=\"\[\\e]0;\${debian_chroot:+(\$debian_chroot)}\u@\h: \w\\a\]\$PS1\"\n\
+    ;;\n\
+*)\n\
+    ;;\n\
+esac\n" \
+>> ~/.bashrc
+# alias
+RUN echo -e "alias ls=\"ls --color=auto\"\n\
+alias ll=\"ls -alF --color=auto\"\n\
 alias vi=\"vim\"" \
 >> ~/.bashrc
+# .vimrc
+RUN echo -e "set nu\n\
+set ai\n\
+set si\n\
+set cindent\n\
+set sts=4\n\
+set ts=4\n\
+set shiftwidth=4\n\
+set wmnu\n\
+set laststatus=2\n\
+set ignorecase\n\
+set hlsearch\n\
+set nocompatible\n\
+set ruler\n\
+set fileencodings=utf-8,euc-kr\n\
+set fencs=ucs-bom,utf-8,euc-kr\n\
+set showmatch\n\
+syntax on\n\
+filetype indent on\n\
+set bs=indent,eol,start\n\
+set title\n\
+color evening\n" \
+> ~/.vimrc
 RUN source ~/.bashrc
 CMD ["bash"]
 ```
