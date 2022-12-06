@@ -25,4 +25,10 @@
 #### ![image](https://user-images.githubusercontent.com/62974484/205824825-77ac9af2-abd3-4842-8c58-67bf6dc1647c.png)
 ### <br/><br/>
 
-### java 프로그램의 동작
+### java 용어
+- java SE (java platform, Standard Edition) : java 의 기본적인 문법의 구성을 정의한다. java virtual machine 을 만든다. JAVA SE 7 은 JDK 1.7 이라고도 부른다.
+- java JDK (Java Development Kit) : java SE 표준안에 따라서 개발에 필요한 여러가지 필수적인 툴 모음이다. 개발에 있어서 필수 요소이다.
+- java JRE (Java Runtime Environment) : java virtual machine 을 실행하는 박스에 해당한다. JRE 는 JDK 에 속하기 때문에 JDK 를 설치하면 JRE 는 자동적으로 포함된다. 반대로 JRE 를 설치하면 JDK 를 사용할 수 없다. 실제로 프로그램이 돌아가는 데에는 JRE 가 가장 중요하다.
+- java JVM (Java Virtual Machine) : 가상 컴퓨터라고 생각하면 될 것 같다. 소스 코드는 이 위에서 돌아간다. 소스 코드는 JVM 안에서 돌아가는 것을 보장한다 라는 것이 가장 중요한 특징이다.
+#### ![image](https://user-images.githubusercontent.com/62974484/205826029-17ef51d6-3ed5-4df4-92d3-051cf925cd5d.png)
+#### ![image](https://user-images.githubusercontent.com/62974484/205826562-03b7417f-e8fa-430d-bd86-7ffff28845ec.png)
