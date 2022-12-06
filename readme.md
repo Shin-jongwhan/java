@@ -19,5 +19,10 @@
 
 ## Java 설치(인트로)
 ### 소스 코드를 작성하는 것은 설계도를 만드는 것이다.
-### ㅁㅁ
+### java 프로그램의 동작
+#### ![image](https://user-images.githubusercontent.com/62974484/205825074-4bcd2dce-9183-47ef-91a2-fcbfaf732777.png)
+### 소스 코드는 가장 안쪽에 있고, 자바라는 프로그램이 그 소스 코드를 실행한다.
 #### ![image](https://user-images.githubusercontent.com/62974484/205824825-77ac9af2-abd3-4842-8c58-67bf6dc1647c.png)
+### <br/><br/>
+
+### java 프로그램의 동작
