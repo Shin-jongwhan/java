@@ -45,7 +45,13 @@
 #### ![image](https://user-images.githubusercontent.com/62974484/205841569-b1c3b9e0-3f63-47c3-928c-deed4131bb22.png)
 ### <br/>
 ### `도커 컨테이너`
+### docker hub
+#### https://hub.docker.com/\_/openjdk
+### Docker file 베이스
+#### https://github.com/docker-library/openjdk/blob/c0ad2e3351d64a0cb01344b6eff945f5d68387c7/20/jdk/oraclelinux7/Dockerfile
+```
 
+```
 ### <br/><br/><br/>
 
 
