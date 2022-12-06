@@ -46,7 +46,7 @@
 ### <br/>
 ### `도커 컨테이너`
 ### docker hub
-#### https://hub.docker.com/\_/openjdk
+#### https://hub.docker.com/_/openjdk
 ### Docker file 베이스
 #### https://github.com/docker-library/openjdk/blob/c0ad2e3351d64a0cb01344b6eff945f5d68387c7/20/jdk/oraclelinux7/Dockerfile
 ```
