@@ -44,7 +44,8 @@
 ### 내가 사용하는 conda 환경에는 open JDK 버전으로 설치가 되어 있다.
 #### ![image](https://user-images.githubusercontent.com/62974484/205841569-b1c3b9e0-3f63-47c3-928c-deed4131bb22.png)
 ### <br/>
-### `도커 컨테이너`
+
+### 나는 `도커 컨테이너` 에서 작업을 할 것이다.
 ### docker hub
 #### https://hub.docker.com/_/openjdk
 
@@ -231,10 +232,12 @@ class Helloworld {
 }
 ```
 ### 컴파일
+#### .java 파일을 바이트코드로 컴파일해주는 작업니다.
 ```
 $ javac hello_world.java
 ```
 ### 실행
+#### * 주의해야할 것은 뒤에 확장자 .class 를 빼고 실행한다.
 ```
 $ java Helloworld
 ```
@@ -242,5 +245,25 @@ $ java Helloworld
 #### ![image](https://user-images.githubusercontent.com/62974484/205968657-d9d1cd9b-2da3-4fb6-8763-a20aa96b18cc.png)
 #### ![image](https://user-images.githubusercontent.com/62974484/205968750-c1a8e08d-2ac0-44a5-b805-1effef1fc5e9.png)
 ### <br/><br/><br/>
+
+## 개발도구와 이클립스
+### 개발도구는 왜 써야 할까?
+#### 땅은 손, 삽, 굴삭기 모두가 팔 수 있고 본질적인 기능은 같다.
+#### 도구라는 것은 기능을 좀 더 쉽고 효율적으로 할 수 있게 만들어주는 것이다.
+#### 개발 도구도 똑같다.
+### <br/>
+
+### 이클립스 (IDE)
+#### IDE : 개발에 필요한 여러가지 도구들이 하나로 결합된 것. 파이썬 IDE 도 그런 기능 !
+#### 소스 에디터, 컴파일러, 디버거, 실행까지 가능한 도구이다.
+### 설치 방법
+### http://www.eclipse.org/downloads/
+### 이클립스 IDE 에서 Download Packages 를 선택
+#### ![image](https://user-images.githubusercontent.com/62974484/210907534-ca4e619d-5440-480e-b0e4-76ad328e021f.png)
+### 가장 위에 있는 installer 선택
+#### ![image](https://user-images.githubusercontent.com/62974484/210907782-9bc492e7-9e6d-461a-9ca3-f167e8e48388.png)
+### >> Select Another Mirror 를 클릭하고 가까운 KAIST 를 선택해서 다운로드
+### ![image](https://user-images.githubusercontent.com/62974484/210907866-2ea6b61d-c2b9-47af-a118-43a5a41301ba.png)
+#### 
 
 
