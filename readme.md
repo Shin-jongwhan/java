@@ -217,8 +217,11 @@ CMD ["bash"]
 ```
 ### <br/><br/>
 
-### docker 접속 및 java 테스트
-### hello world
+### docker 접속
+```
+$ docker run -it -v /TBI/People/tbi/jhshin/script/docker/java/java:/root/project shinejh0528/java:latest
+```
+### hello world, java 실행 테스트
 #### hello_world.java
 ```
 class Helloworld {
