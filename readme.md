@@ -272,5 +272,9 @@ $ java Helloworld
 #### ![image](https://github.com/Shin-jongwhan/java/assets/62974484/a95180fe-78d0-4cdb-a78e-b1e295d5a345)
 ### <br/><br/><br/>
 
+### java 의 프로젝트는 다음과 같은 hierachy 로 만들어진다.
+- project
+  - package
+    - class
 
 
