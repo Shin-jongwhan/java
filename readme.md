@@ -264,6 +264,13 @@ $ java Helloworld
 #### ![image](https://user-images.githubusercontent.com/62974484/210907782-9bc492e7-9e6d-461a-9ca3-f167e8e48388.png)
 ### >> Select Another Mirror 를 클릭하고 가까운 KAIST 를 선택해서 다운로드
 ### ![image](https://user-images.githubusercontent.com/62974484/210907866-2ea6b61d-c2b9-47af-a118-43a5a41301ba.png)
-#### 
+### <br/>
+
+### 폴더를 나누는 기준은 다음과 같다
+- bin : .class 파일이 있는 binary 폴더
+- src : .java 파일이 있는 source 폴더
+#### ![image](https://github.com/Shin-jongwhan/java/assets/62974484/a95180fe-78d0-4cdb-a78e-b1e295d5a345)
+### <br/><br/><br/>
+
 
 
