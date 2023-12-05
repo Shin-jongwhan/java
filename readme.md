@@ -282,6 +282,13 @@ $ java Helloworld
 ### package 명은 도메인 네임 형식으로 만든다. 그렇게 해야만 package 가 만들어지는 것은 아니지만, 도메인 네임은 유니크한 주소이기 때문에 도메인 네임 형식을 따르자고 개발자들끼리 정하였다.
 ### 그리고 도메인 네임으로 쓴 각 '.' 사이사이 이름들은 폴더로 구분된다.
 ### ex) org.opentutorials.javatutorials.eclips
+### 만약 다음과 같이 되었다면 폴더 구조는 이렇게 된다.
+- project : javatutorials
+- package : org.opentutorials.javatutorials.eclips
+- script name : Helloworld
+- folder
+  - javatutorials/bin/org/opentutorials/javatutorials/eclips/Helloworld.class
+  - javatutorials/src/org/opentutorials/javatutorials/eclips/Helloworld.java
 ### <br/>
 
 ### 이클립스를 이용하면 프로젝트, 패키지, 소스코드를 bin, src 로 구분하여 저장해준다.
