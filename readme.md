@@ -266,6 +266,13 @@ $ java Helloworld
 ### ![image](https://user-images.githubusercontent.com/62974484/210907866-2ea6b61d-c2b9-47af-a118-43a5a41301ba.png)
 ### <br/>
 
+### 이클립스로 리눅스 remote server 접속하기
+### remote system explorer 를 이용하면 리눅스 서버로 접속할 수 있다.
+### 다음의 사이트를 참고하였다.
+- https://m.blog.naver.com/david_shkim/221825689740
+- https://blog.naver.com/hang_sun/130088174568
+### <br/>
+
 ### 폴더를 나누는 기준은 다음과 같다
 - bin : .class 파일이 있는 binary 폴더
 - src : .java 파일이 있는 source 폴더
