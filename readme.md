@@ -272,9 +272,16 @@ $ java Helloworld
 #### ![image](https://github.com/Shin-jongwhan/java/assets/62974484/a95180fe-78d0-4cdb-a78e-b1e295d5a345)
 ### <br/><br/><br/>
 
+## java 개발 시 알아두어야 할 점
 ### java 의 프로젝트는 다음과 같은 hierachy 로 만들어진다.
 - project
   - package
     - class
+### <br/>
+
+### package 명은 도메인 네임 형식으로 만든다. 그렇게 해야만 package 가 만들어지는 것은 아니지만, 도메인 네임은 유니크한 주소이기 때문에 도메인 네임 형식을 따르자고 개발자들끼리 정하였다.
+### ex) org.opentutorials.javatutorials.eclips
+### <br/>
+
 
 
