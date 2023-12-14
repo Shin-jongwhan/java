@@ -16,12 +16,17 @@ public class datatype {
         // 참고 : b, c 는 같은 메모리 사이즈를 점유하고 있다(8 byte);
         long b = 2147381231136421237L;
         long c = 1L;
+        
+        // float 형은 F 를 뒤에다가 붙여준다.
+        float flA = 1.2F;
 
         int d = 2147111111;
         System.out.println(a);
         System.out.println(b);
         System.out.println(c);
         System.out.println(d);
+
+        
     }
     
 }
