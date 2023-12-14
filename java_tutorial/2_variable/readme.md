@@ -17,4 +17,8 @@ public class variable_double {
     }
 }
 ```
+### <br/><br/><br/>
 
+## 변수의 사용
+### 변수의 사용은 가독성, 코드 간편화 등의 장점이 있다.
+#### ![image](https://github.com/Shin-jongwhan/java/assets/62974484/c3848579-5548-4171-a5bb-f4168ed1aa66)
