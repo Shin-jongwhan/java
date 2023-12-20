@@ -9,3 +9,7 @@
 #### ![image](https://github.com/Shin-jongwhan/java/assets/62974484/edeb5ac2-9c92-451f-9bbc-8306d7cee083)
 ### 모든 class 를 가져올 경우 * 을 사용한다.
 #### ![image](https://github.com/Shin-jongwhan/java/assets/62974484/1a8ca664-e085-413c-a010-92fc29dcd60d)
+### <br/>
+
+### 컴파일 할 때에는 default 로는 컴파일 하는 .java 파일 위치에 클래스 파일이 생성된다.
+### 만약 bin/ 폴더에 모아놓고 싶다면 -d 옵션을 주어 어디에 위치 시킬지 정할 수 있다.
