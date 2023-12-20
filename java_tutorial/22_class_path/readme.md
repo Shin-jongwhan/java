@@ -18,6 +18,6 @@ javac example1.java
 
 ### 그래서 java 옵션으로 -classpath 을 붙여주면 실행이 된다.
 ### * -classpath "." 은 현재 경로를 추가해준 것이다.
-### * -classpath ".:dir/" 이렇게 입력하면 순차적으로 우선순위를 두게 해서 classpath 를 추가할 수 있다.
+### * -classpath ".;dir/" 이렇게 입력하면 순차적으로 우선순위를 두게 해서 classpath 를 추가할 수 있다.
 #### ![image](https://github.com/Shin-jongwhan/java/assets/62974484/decd11b6-a310-4956-831d-476817017fdb)
 
