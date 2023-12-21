@@ -54,8 +54,12 @@ public class CalculatorDemo1 {
 #### https://makemethink.tistory.com/184
 ### 다음과 같이 선언 후 딱 한 번만 초기화를 할 수는 있다.
 #### ![image](https://github.com/Shin-jongwhan/java/assets/62974484/7f4f8f88-c1a5-4cf8-b902-b6d587a4b84d)
+### <br/>
+
 ### static 은 한 번 선언하면 끝인데, final 은 초기화를 한 번 진행할 수 있어 인스턴스에서 값을 딱 한 번 지정해줄 수 있다.
 #### ![image](https://github.com/Shin-jongwhan/java/assets/62974484/52fbac4a-ed51-4919-8c2e-67899472d2a9)
+### <br/>
+
 ### static 이랑 final 은 '한 번의' 초기화가 가능하냐 가능하지 않냐의 차이이다.
 ### 메모리 효율을 위해 static 이랑 final 은 자주 같이 쓰인다.
 #### * static 을 사용하면 고정된 메모리 주소값을 계속 사용하는 것이다.
