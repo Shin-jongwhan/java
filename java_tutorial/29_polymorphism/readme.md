@@ -31,13 +31,13 @@ class A{
     public String x(){return "A.x";}
 }
 class B extends A{
-    public String x(){return "B.x";}
+    public String x(){return "B.x";}        // 오버라이딩을 하였음
     public String y(){return "y";}
 }
 public class PolymorphismDemo1 {
     public static void main(String[] args) {
         A obj = new B();
-        System.out.println(obj.x());
+        System.out.println(obj.x());        // B 클래스에서 오버라이딩한 x() 메쏘드가 출력됨
     }
 }
 ```
