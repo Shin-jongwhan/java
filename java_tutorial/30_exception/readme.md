@@ -100,5 +100,35 @@ public class example2 {
 }
 
 ```
-### <br/>
+### <br/><br/><br/>
+
+### 파일 읽는 것 에러 처리하기
+```
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class example3 {
+    public static void main(String[] args) {
+        BufferedReader bReader = null;
+        String input = null;
+        try {
+            bReader = new BufferedReader(new FileReader("30_exception/out.txt"));
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        }
+        try{
+            input = bReader.readLine();
+        } catch (IOException e){
+            e.printStackTrace();
+        }       
+        System.out.println(input); 
+    }
+}
+
+```
+### 이 두개 변수는 try 밖에서 선언해야 한다.
+### try 는 {} 안에 있고, 그렇기 때문에 try 안에서 선언하면 try 지역변수로 인식된다.
+#### ![image](https://github.com/Shin-jongwhan/java/assets/62974484/846f3821-2dc1-481d-936b-e77dc371a444)
 
