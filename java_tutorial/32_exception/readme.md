@@ -3,6 +3,9 @@
 ### if 문을 활용하여 입의로 raise exceiotion 을 만들 수 있다.
 ### 아래에서는 throw new IllegalArgumentException 으로 발생시켰다.
 ```
+//package 32_exception;
+
+
 class Calculator{
     int left, right;
     public void setOprands(int left, int right){
@@ -25,13 +28,51 @@ class Calculator{
         }
     }
 } 
-public class CalculatorDemo {
+
+
+class Calculator2{
+    int left, right;
+    public void setOprands(int left, int right){
+        this.left = left;
+        this.right = right;
+    }
+    public void divide(){
+        if(right == 0){
+            throw new IllegalArgumentException("두번째 인자의 값은 0이 될 수 없습니다.");
+        }
+        try {
+            System.out.print("계산결과는 ");
+            System.out.print(this.left/this.right);
+            System.out.print(" 입니다.");
+        } catch(Exception e){
+            System.out.println("\n\ne.getMessage()\n"+e.getMessage());
+            System.out.println("\n\ne.toString()\n"+e.toString());
+            System.out.println("\n\ne.printStackTrace()");
+            e.printStackTrace();
+        }
+    }
+} 
+
+
+
+public class example {
     public static void main(String[] args) {
-        Calculator c1 = new Calculator();
-        c1.setOprands(10, 0);
-        c1.divide();
+        //Calculator c1 = new Calculator();
+        //c1.setOprands(10, 0);
+        //c1.divide();
+
+        Calculator2 c2 = new Calculator2();
+        c2.setOprands(10, 0);
+        // 다음과 같이 throw 로 받은 exception 을 호출할 수도 있다.
+        try {
+            c2.divide();
+        }
+        catch (IllegalArgumentException e) {
+            System.out.println(e.getMessage());
+        }
     }
 }
+
 ```
 ### <br/>
 
@@ -43,3 +84,6 @@ public class CalculatorDemo {
 |NullPointerException|매개 변수 값이 null 일 때|
 |IndexOutOfBoundsException|인덱스 매개 변수 값이 범위를 벗어날 때|
 |ArithmeticException|산술적인 연산에 오류가 있을 때|
+### <br/><br/>
+
+
