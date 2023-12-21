@@ -32,3 +32,21 @@ public interface Calculatable {
 ```
 ### <br/>
 
+### 인터페이스는 다른 인터페이스를 상속받을 수 있다.
+### 그리고 인터페이스 I3 를 상속받은 I4 로 클래스를 만들려면 두 인터페이스에 있는 메쏘드들 모두 만들어야 한다.
+```
+interface I3{
+    public void x();
+}
+ 
+interface I4 extends I3{
+    public void z();
+}
+ 
+class B implements I4{
+    public void x(){}
+    public void z(){}   
+}
+```
+### <br/>
+
