@@ -86,4 +86,11 @@ public class example {
 |ArithmeticException|산술적인 연산에 오류가 있을 때|
 ### <br/><br/>
 
+### 모든 exception 메쏘드들이 다 Throw 할 수 있는 건 아니다.
+### 다음과 같이 부모가 RuntimeException 인 것 안에 있어야 가능하다.
+#### ![image](https://github.com/Shin-jongwhan/java/assets/62974484/9a4b6fb3-11bb-4996-b3b1-7b0c4333bb0f)
+### 부모 관계
+#### ![image](https://github.com/Shin-jongwhan/java/assets/62974484/dc05c9f0-6f73-4484-b046-6ecff9282427)
+### <br/>
+
 
