@@ -6,6 +6,8 @@
 
 ### 아래는 A 라는 데이터 타입으로 new B() 를 만든 것이다.
 ### 이 경우 B 클래스에 있는 y() 는 에러가 난다.
+### 왜냐면 데이터 타입이 A 라서...
+### 하지만 오버라이딩을 하는 경우에는 클래스 B 에 있는 메쏘드가 출력이 된다.
 ```
 class A{
     public String x(){return "x";}
@@ -18,6 +20,24 @@ public class PolymorphismDemo1 {
         A obj = new B();
         obj.x();
         obj.y();
+    }
+}
+```
+### <br/>
+
+### 오버라이딩 할 경우
+```
+class A{
+    public String x(){return "A.x";}
+}
+class B extends A{
+    public String x(){return "B.x";}
+    public String y(){return "y";}
+}
+public class PolymorphismDemo1 {
+    public static void main(String[] args) {
+        A obj = new B();
+        System.out.println(obj.x());
     }
 }
 ```
