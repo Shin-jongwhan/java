@@ -95,6 +95,77 @@ public class example {
 #### ![image](https://github.com/Shin-jongwhan/java/assets/62974484/9a4b6fb3-11bb-4996-b3b1-7b0c4333bb0f)
 ### 부모 관계
 #### ![image](https://github.com/Shin-jongwhan/java/assets/62974484/dc05c9f0-6f73-4484-b046-6ecff9282427)
+### <br/><br/>
+
+### 직접 에러를 만들 수도 있다.
+### unchecked exception
+```
+class DivideException extends RuntimeException {
+    DivideException(){
+        super();
+    }
+    DivideException(String message){
+        super(message);
+    }
+}
+class Calculator{
+    int left, right;
+    public void setOprands(int left, int right){        
+        this.left = left;
+        this.right = right;
+    }
+    public void divide(){
+        if(this.right == 0){
+            throw new DivideException("0으로 나누는 것은 허용되지 않습니다.");
+        }
+        System.out.print(this.left/this.right);
+    }
+}
+public class CalculatorDemo {
+    public static void main(String[] args) {
+        Calculator c1 = new Calculator();
+        c1.setOprands(10, 0);
+        c1.divide();
+    }
+}
+```
 ### <br/>
 
-
+### checked exception
+```
+// Exception 은 RuntimeExcetion 의 부모 클래스이기 때문에 checked exception 으로 직접 에러를 호출할 수 없다.
+class DivideException extends Exception {
+    DivideException(){
+        super();
+    }
+    DivideException(String message){
+        super(message);
+    }
+}
+class Calculator{
+    int left, right;
+    public void setOprands(int left, int right){        
+        this.left = left;
+        this.right = right;
+    }
+    public void divide() throws DivideException{
+        if(this.right == 0){
+            throw new DivideException("0으로 나누는 것은 허용되지 않습니다.");
+        }
+        System.out.print(this.left/this.right);
+    }
+}
+public class CalculatorDemo {
+    public static void main(String[] args) {
+        Calculator c1 = new Calculator();
+        c1.setOprands(10, 0);
+        // Exception 은 RuntimeExcetion 의 부모 클래스이기 때문에 checked exception 으로 직접 에러를 호출할 수 없다.
+        // 아래와 같이 try catch 로 써야 한다.
+        try {
+            c1.divide();
+        } catch (DivideException e) {
+            e.printStackTrace();
+        }
+    }
+}
+```
