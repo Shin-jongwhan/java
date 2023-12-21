@@ -22,4 +22,7 @@ public void divide(){
 #### ![image](https://github.com/Shin-jongwhan/java/assets/62974484/0e5b1919-2aeb-48ef-8288-b292403d91fd)
 ### <br/>
 
+### catch 안에는 예외클래스 인스턴스가 들어간다.
+#### ![image](https://github.com/Shin-jongwhan/java/assets/62974484/f950979d-ead4-4dbd-9328-6eaee9654c7d)
+### <br/>
 
