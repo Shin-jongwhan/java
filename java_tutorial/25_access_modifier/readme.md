@@ -1,5 +1,8 @@
 ### 231221
 ## 접근 제어자 (access modifier)
+### public, private 으로 써진 것이 접근 제어자라는 것이다.
+### <br/>
+
 ### 다음과 같은 코드가 있다.
 ```
 class A {
