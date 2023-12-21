@@ -44,4 +44,8 @@ public class example {
 ### <br/>
 
 ### 클래스 / 메쏘드의 캡슐화를 할 때는 어디까지 접근 가능한지 이해하면 좋다.
+### 이런 scope 로 접근이 가능하다.
+#### ![image](https://github.com/Shin-jongwhan/java/assets/62974484/5de53ede-3d3d-4ce0-8d30-2d05243df738)
+### 아래 그림은 참고
 #### ![image](https://github.com/Shin-jongwhan/java/assets/62974484/4a0451bf-3ffc-4cc3-b9db-df694efabd0c)
+### <br/>
