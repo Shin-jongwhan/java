@@ -63,3 +63,42 @@ public class example2 {
 ```
 ### <br/>
 
+### finally
+### try, catch 다음에 나와야 한다.
+### finally 는 마지막에 항상 실행되는 구문이다.
+```
+class A{
+    private int[] arr = new int[3];
+    A(){
+        arr[0]=0;
+        arr[1]=10;
+        arr[2]=20;
+    }
+    public void z(int first, int second){
+        try {
+            System.out.println(arr[first] / arr[second]);
+        } catch(ArrayIndexOutOfBoundsException e){
+            System.out.println("ArrayIndexOutOfBoundsException");
+        } catch(ArithmeticException e){
+            System.out.println("ArithmeticException");
+        } catch(Exception e){
+            System.out.println("Exception");
+        } finally {
+            System.out.println("finally");
+        }
+    }
+}
+
+
+public class example2 {
+    public static void main(String[] args) {
+        A a = new A();
+        a.z(10, 0);
+        a.z(1, 0);
+        a.z(2, 1);
+    }
+}
+
+```
+### <br/>
+
