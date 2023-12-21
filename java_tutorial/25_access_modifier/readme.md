@@ -49,3 +49,6 @@ public class example {
 ### 아래 그림은 참고
 #### ![image](https://github.com/Shin-jongwhan/java/assets/62974484/4a0451bf-3ffc-4cc3-b9db-df694efabd0c)
 ### <br/>
+
+### 다른 패키지에 있는 것을 가져올 때는 다음과 같이 가져올 수 있다.
+#### ![image](https://github.com/Shin-jongwhan/java/assets/62974484/796e4498-421e-4dd9-b56c-19d5dddaa778)
