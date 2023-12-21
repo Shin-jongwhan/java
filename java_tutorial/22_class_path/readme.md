@@ -1,5 +1,6 @@
 ### 231220
 ## class path
+### https://opentutorials.org/course/1223/5531
 ### java 파일을 컴파일하면 class 마다 하나씩 class 파일이 생성된다.
 ```
 javac example1.java
