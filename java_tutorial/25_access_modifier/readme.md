@@ -2,10 +2,10 @@
 ## 접근 제어자 (access modifier)
 ### public, private 으로 써진 것이 접근 제어자라는 것이다.
 ### 아래는 아래로 갈 수록 엄격한 제한이 있다.
-- public
-- protected
-- default
-- private
+- public : 객체에서 사용 가능
+- protected : 다른 패키지에서 객체로 불러오는 경우는 사용 불가능하고, 상속받아서 쓰는 경우는 가능
+- default : 같은 패키지 안에서만 사용 가능
+- private : 같은 패키지, 같은 클래스 안에서만 사용 가능
 ### <br/>
 
 ### 다음과 같은 코드가 있다.
