@@ -44,6 +44,7 @@ public class CalculatorDemo {
 }
 ```
 ### 아래 두 코드는 같은 의미이다. 
+### * 어떻게 이렇게 기능을 할 수 있는 것인가?? 그것은 바로 overriding 으로 인한 것 !
 ```
 System.out.println(c1);
 System.out.println(c1.toString());
