@@ -53,3 +53,9 @@ System.out.println(c1.toString());
 
 ### 이러한 기본 라이브러리는 JRE 나 JDK 에 설치되어 있다. 
 ### Object.class 에 .toString() 에 대한 내용이 저장되어 있는데, 여기에 있는 코드를 수정하면 .toString() 에 대한 기능을 수정할 수 있다.
+### <br/>
+
+### 가비지 컬렉션 (garbage collection, GC)
+### 아래 블로그를 참고하자
+#### https://d2.naver.com/helloworld/1329
+### 
