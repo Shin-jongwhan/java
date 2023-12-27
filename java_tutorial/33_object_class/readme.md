@@ -71,10 +71,13 @@ System.out.println(c1.toString());
   }
   ```
 - .clone() 메쏘드를 이용한다.
+
 #### <br/>
-### 여기서 몇가지 주의 사항이 있는데, Cloneable 은 인터페이스로, 그냥 비어 있다.
+### 여기서 몇가지 주의 사항이 있는데, Cloneable 은 인터페이스로, 그냥 비어 있다. 
+### 그래서 복제할 수 있도록 .clone() 메쏘드를 사용해야 한다.
 #### ![image](https://github.com/Shin-jongwhan/java/assets/62974484/df6532bf-af5f-413d-a60c-c42774a42433)
-### 그리고 java API 문서에서 보면 .clone() 메쏘드는 throws CloneNotSupportedException 를 강제한다.
+### java API 문서에서 보면 .clone() 메쏘드는 throws CloneNotSupportedException 를 강제한다. 즉, 복제시 try catch 구문을 사용해야 한다.
+### 또한 클래스가 Object 이기 때문에 복제시 ([class_name]) 으로 명시해줘야 한다.
 #### ![image](https://github.com/Shin-jongwhan/java/assets/62974484/364970e8-074d-4916-b99d-bc75d33b9c45)
 #### <br/>
 
