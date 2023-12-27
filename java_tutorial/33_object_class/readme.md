@@ -58,4 +58,16 @@ System.out.println(c1.toString());
 ### 가비지 컬렉션 (garbage collection, GC)
 ### 아래 블로그를 참고하자
 #### https://d2.naver.com/helloworld/1329
-### 
+### GC 는 정말 중요한 개념이다.
+### <br/>
+
+### 클론 (복제)
+### 복제를 하려면 다음과 같은 과정을 거쳐야 한다.
+- 복제할 수 있는 클래스라고 알려줘야 한다. 그래서 implements Cloneable 를 해야 한다.
+  ```
+  class Test implements Cloneable {
+
+  }
+  ```
+- .clone() 메쏘드를 이용한다.
+#### ![image](https://github.com/Shin-jongwhan/java/assets/62974484/364970e8-074d-4916-b99d-bc75d33b9c45)
