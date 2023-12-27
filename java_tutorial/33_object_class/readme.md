@@ -55,14 +55,14 @@ System.out.println(c1.toString());
 ### Object.class 에 .toString() 에 대한 내용이 저장되어 있는데, 여기에 있는 코드를 수정하면 .toString() 에 대한 기능을 수정할 수 있다.
 ### <br/>
 
-### 가비지 컬렉션 (garbage collection, GC)
+## 가비지 컬렉션 (garbage collection, GC)
 ### 아래 블로그를 참고하자
 #### https://d2.naver.com/helloworld/1329
 ### GC 는 정말 중요한 개념이다. 하지만 간단하게 정리하자면, 안 쓰는 변수가 메모리에 저장되는데, 이를 다 썼는지 안 썼는지 체크해서 다 쓴 거면 제거해주는 것이다. 메모리 최적화 및 CPU 간 변수 참조 충돌을 막기 위해 사용하는 것이다. 
 ### 여기서 많은 CPU 와 시간을 잡아먹는다.
 ### <br/>
 
-### 클론 (복제)
+## 클론 (복제)
 ### 복제를 하려면 다음과 같은 과정을 거쳐야 한다.
 - 복제할 수 있는 클래스라고 알려줘야 한다. 그래서 implements Cloneable 를 해야 한다.
   ```
