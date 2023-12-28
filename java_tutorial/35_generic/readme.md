@@ -88,3 +88,13 @@ Person<EmployeeInfo, Integer> p1 = new Person<EmployeeInfo, Integer>(e, i);
 ```
 ### <br/>
 
+## 제네릭의 생략
+### 제네릭의 명시는 생략할 수 있다.
+```
+// 이것을
+Person<EmployeeInfo, Integer> p1 = new Person<EmployeeInfo, Integer>(e, i);
+// 이렇게 생략 가능하다.
+Person p2 = new Person(e, i);
+```
+### <br/>
+
