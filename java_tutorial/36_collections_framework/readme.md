@@ -119,10 +119,14 @@ public class collection_set_ex2 {
 ```
 ### 부분집합 (subset)
 #### ![image](https://github.com/Shin-jongwhan/java/assets/62974484/8ca3c9bc-921b-4c6e-9350-d9fa5ba92654)
+
 ### 합집합 (union)
-#### ![image](https://github.com/Shin-jongwhan/java/assets/62974484/86303ee7-898c-4334-a38e-56cb4c624c20)
+#### ![image](https://github.com/Shin-jongwhan/java/assets/62974484/2b69486b-7419-4ba5-9ae9-567e6dd0b6c9)
+
 ### 교집합 (intersect)
 #### ![image](https://github.com/Shin-jongwhan/java/assets/62974484/18e387c3-a261-40e9-896b-eafc16fc7312)
+
 ### 차집합 (difference)
 #### ![image](https://github.com/Shin-jongwhan/java/assets/62974484/6e9f3c41-40fb-48d4-a699-5e8692575068)
+
 
