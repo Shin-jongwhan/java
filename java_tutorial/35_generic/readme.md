@@ -81,6 +81,7 @@ public class GenericDemo {
 Person<EmployeeInfo, int> p1 = new Person<EmployeeInfo, int>(new EmployeeInfo(1), 1);
 ```
 ### 대신에 참조 데이터 타입 형태로 선언해준 후 넣어줄 수 있다.
+### generic_ex.java 참고
 ```
 Integer i = new Integer(10);
 Person<EmployeeInfo, Integer> p1 = new Person<EmployeeInfo, Integer>(e, i);
