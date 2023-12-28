@@ -1,9 +1,12 @@
 ### 231228
 ## collections and framework
+
+## 리스트
 ### 배열을 사용할 때 불편한 점 : 배열에 몇 개까지 넣을 수 있는지 모른다는 점.
 ### ArrayList 를 쓰면 간편하다.
 ### 여기서 .add() 메쏘드에서 받는 인자는 Object 형 타입이기 때문에 어떤 타입도 수용이 가능한 것이다.
 ### Object 형은 다른 타입들의 부모 클래스이기 때문에 그 하위에 있는 타입들을 수용 가능하다.
+### <br/>
 ```
 import java.util.ArrayList;
  
@@ -241,4 +244,7 @@ public class framework_ex {
 ```
 ### <br/>
 
-
+## map
+### map 은 key : value 형태로 구성된 컨테이너다. 파이썬에서는 딕셔너리와 같다.
+#### ![image](https://github.com/Shin-jongwhan/java/assets/62974484/d3a30a41-2823-4469-bb77-44135d4d5662)
+### <br/>
