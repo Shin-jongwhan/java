@@ -327,7 +327,7 @@ public class collection_map_ex {
 ## 정렬
 ### sort() 메쏘드를 구현하기 위해서는 implements Comparable 을 먼저 해야 한다.
 #### ![image](https://github.com/Shin-jongwhan/java/assets/62974484/b13b392f-1719-41da-bf6c-8cb352cf0f12)
-### 그리고 sort() 에서는 compareTo() 메쏘드가 내부적으로 돌아간다.
+### 그리고 sort() 에서는 compareTo() 메쏘드가 내부적으로 돌아가는데, 값을 비교할 수 있게 메쏘드를 만들어줘야 한다.
 ### 값을 비교하기 위해서다. 값이 큰지 작은지 판단하고, 0 이 나오면 값이 같은 것...
 #### ![image](https://github.com/Shin-jongwhan/java/assets/62974484/7bc00496-c92d-466e-b91c-e6d17a9fc281)
 ```
@@ -370,3 +370,5 @@ public class CollectionsDemo {
  
 }
 ```
+### 정렬 결과
+#### ![image](https://github.com/Shin-jongwhan/java/assets/62974484/473e6b5b-8e58-48d8-8748-3d912f7256a9)
