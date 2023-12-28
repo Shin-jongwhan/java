@@ -66,6 +66,7 @@ for(int i=0; i<al.size(); i++){
 ### <br/>
 
 ## 집합
+### 집합은 순서가 없다.
 ### collection_set_ex2.java 
 ### 강의에 있는 코드를 일부 변경하였다.
 ```
@@ -131,5 +132,10 @@ public class collection_set_ex2 {
 ### <br/>
 
 ### 프레임워크의 전체적인 hierarchy 는 다음과 같다.
+- 하늘색 : 인터페이스
+- 파란색 : 클래스
+### 모든 클래스는 상위 인터페이스에 있는 add, remove 를 가지고 있다.
+### 집합은 순서에 대한 기능이 없다.
+### 리스트는 순서에 대한 기능이 구현되어 있다.
 #### ![image](https://github.com/Shin-jongwhan/java/assets/62974484/2b68da0a-2af8-4774-970e-0cfbcaad3ade)
 
