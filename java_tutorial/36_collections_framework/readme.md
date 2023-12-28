@@ -271,3 +271,54 @@ public class collection_map_ex {
 ```
 ### <br/>
 
+### 예제 2
+### map 에 있는 모든 key : value 를 조회하는 방법 2 가지
+- Map.Entry() 로 구하는 방법
+- Iterator() 로 구하는 방법
+```
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Set;
+import java.util.Iterator;
+
+public class collection_map_ex {
+    public static void main(String[] args) {
+        HashMap<String, Integer> a = new HashMap<String, Integer>();
+        // key, value
+        a.put("one", 1);
+        a.put("two", 2);
+        a.put("three", 3);
+        a.put("four", 4);
+
+        // value 가져오기
+        System.out.println(a.get("one"));
+        System.out.println(a.get("two"));
+        System.out.println(a.get("three"));
+
+        // 모든 값을 반복해서 구하는 방법 2 가지
+        iteratorUsingForEach(a);
+        iteratorUsingIterator(a);
+    }
+
+
+    static void iteratorUsingForEach(HashMap map){
+        Set<Map.Entry<String, Integer>> entries = map.entrySet();
+        // entries 안에 있는 하나하나의 값을 entry 에 넣음
+        // Map.Entry 로 key, value 각각을 구함
+        for (Map.Entry<String, Integer> entry : entries) {
+            System.out.println(entry.getKey() + " : " + entry.getValue());
+        }
+    }
+     
+    static void iteratorUsingIterator(HashMap map){
+        // Iterator 로 구하는 방법
+        Set<Map.Entry<String, Integer>> entries = map.entrySet();
+        Iterator<Map.Entry<String, Integer>> i = entries.iterator();
+        while(i.hasNext()){
+            Map.Entry<String, Integer> entry = i.next();
+            System.out.println(entry.getKey()+" : "+entry.getValue());
+        }
+    }
+}
+
+```
