@@ -98,3 +98,54 @@ Person p2 = new Person(e, i);
 ```
 ### <br/>
 
+## 제네릭의 제한
+### 제네릭은 데이터 타입은 인스턴스를 생성할 때 지정해줄 수 있다는 장점이 있지만, 아무 데이터 타입을 허용해준다는 의미도 된다.
+### 그래서 이러한 것을 강제할 수 있다.
+### extends 를 사용해서 강제할 수 있다.
+### abstract 로 해도 되고...
+```
+abstract class Info{
+    public abstract int getLevel();
+}
+class EmployeeInfo extends Info{
+    public int rank;
+    EmployeeInfo(int rank){ this.rank = rank; }
+    public int getLevel(){
+        return this.rank;
+    }
+}
+class Person<T extends Info>{
+    public T info;
+    Person(T info){ this.info = info; }
+}
+public class GenericDemo {
+    public static void main(String[] args) {
+        Person p1 = new Person(new EmployeeInfo(1));
+        Person<String> p2 = new Person<String>("부장");
+    }
+}
+```
+
+### interface 로 해도 된다.
+```
+interface Info{
+    int getLevel();
+}
+class EmployeeInfo implements Info{
+    public int rank;
+    EmployeeInfo(int rank){ this.rank = rank; }
+    public int getLevel(){
+        return this.rank;
+    }
+}
+class Person<T extends Info>{
+    public T info;
+    Person(T info){ this.info = info; }
+}
+public class GenericDemo {
+    public static void main(String[] args) {
+        Person p1 = new Person(new EmployeeInfo(1));
+        Person<String> p2 = new Person<String>("부장");
+    }
+}
+```
