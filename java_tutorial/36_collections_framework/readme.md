@@ -31,3 +31,29 @@ public class ArrayListDemo {
 ```
 ### <br/>
 
+### 그런데 위 코드에서 String 형의 변수에 담으려고 하면 에러가 난다.
+### 그래서 명시적 형 변환을 해주어야 한다.
+### 근데 이것도 예전 방식이다.
+```
+for(int i=0; i<al.size(); i++){
+    String val = al.get(i);  // 에러남
+    String val = (String)al.get(i);
+    System.out.println(val);
+}
+```
+### <br/>
+
+### 제네릭을 사용하면 명시해주지 않아도 된다.
+```
+ArrayList<String> al = new ArrayList<String>();
+al.add("one");
+al.add("two");
+al.add("three");
+for(int i=0; i<al.size(); i++){
+    String val = al.get(i);
+    System.out.println(val);
+}
+```
+### <br/>
+
+
