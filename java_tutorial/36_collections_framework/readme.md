@@ -128,5 +128,8 @@ public class collection_set_ex2 {
 
 ### 차집합 (difference)
 #### ![image](https://github.com/Shin-jongwhan/java/assets/62974484/6e9f3c41-40fb-48d4-a699-5e8692575068)
+### <br/>
 
+### 프레임워크의 전체적인 hierarchy 는 다음과 같다.
+#### ![image](https://github.com/Shin-jongwhan/java/assets/62974484/2b68da0a-2af8-4774-970e-0cfbcaad3ade)
 
