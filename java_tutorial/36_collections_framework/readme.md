@@ -134,8 +134,111 @@ public class collection_set_ex2 {
 ### 프레임워크의 전체적인 hierarchy 는 다음과 같다.
 - 하늘색 : 인터페이스
 - 파란색 : 클래스
-### 모든 클래스는 상위 인터페이스에 있는 add, remove 를 가지고 있다.
+### 모든 클래스는 상위 인터페이스에 있는 add, remove 등을 가지고 있다 (최상단 collection 인터페이스 참고).
 ### 집합은 순서에 대한 기능이 없다.
 ### 리스트는 순서에 대한 기능이 구현되어 있다.
 #### ![image](https://github.com/Shin-jongwhan/java/assets/62974484/2b68da0a-2af8-4774-970e-0cfbcaad3ade)
+### <br/>
+
+### collection 인터페이스에 보면 iterator 가 있다.
+### 구글에 java iterator API 라고 치면 다음의 사이트를 찾을 수 있다.
+#### https://docs.oracle.com/javase/8/docs/api/java/util/Iterator.html
+#### ![image](https://github.com/Shin-jongwhan/java/assets/62974484/fa806cf3-25c4-407d-9eb0-b92024aca3df)
+### <br/>
+
+### 다음과 같은 예제가 있다.
+### hi.hasNext() 는 boolean 값을 return 한다.
+### hi.next() 는 true 를 체크했으므로 다음 값이 있어서 바로 다음 값을 출력한다.
+### hi.hasNext() 가 false 가 된 경우 다시 사용하려면 다시 초기화해야 한다.
+```
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.Iterator;
+
+public class framework_ex {
+    public static void main(String[] args) {
+        // HashSet
+        HashSet<Integer> A = new HashSet<Integer>();
+        A.add(1);
+        A.add(2);
+        A.add(3);
+
+        Iterator hi = A.iterator();
+        while(hi.hasNext()) {
+            System.out.println(hi.next());
+        }
+
+        // 이미 마지막에 도달하였기 때문에 첫 실행에서 false 
+        // 다시 하려면 초기화 해야 함
+        // hi = A.iterator();
+        while(hi.hasNext()) {
+            System.out.println(hi.next());
+        }
+    }
+}
+
+```
+### <br/>
+
+### 인터페이스는 집합, 리스트의 공통 부모이기 때문에 Collection 으로 오브젝트 선언이 가능하다.
+```
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.HashSet;
+import java.util.Iterator;
+
+public class framework_ex {
+    public static void main(String[] args) {
+        // HashSet
+        HashSet<Integer> A = new HashSet<Integer>();
+        A.add(1);
+        A.add(2);
+        A.add(3);
+
+        Iterator hi = A.iterator();
+        while(hi.hasNext()) {
+            System.out.println(hi.next());
+        }
+        
+        // 이미 마지막에 도달하였기 때문에 첫 실행에서 false 
+        // 다시 하려면 초기화 해야 함
+        // hi = A.iterator();
+        while(hi.hasNext()) {
+            System.out.println(hi.next());
+        }
+
+        ////////////////////////////////////////////////////
+        // ArrayList
+        ArrayList<Integer> B = new ArrayList<Integer>();
+        B.add(1);
+        B.add(2);
+        B.add(3);
+
+        Iterator hi_B = B.iterator();
+        while(hi_B.hasNext()) {
+            System.out.println(hi_B.next());
+        }
+
+        ////////////////////////////////////////////////////
+        // Collection
+        // Collection 은 인터페이스이고 HashSet, ArrayList 의 부모이다.
+        // Collection 에는 add, remove, Iterator 메쏘드가 포함되어 있다.
+        // 그래서 호출이 가능하다.
+        // 또한 부모 인터페이스로 구현되어 있기 때문에 Collection 으로 호출해도 된다.
+        Collection<Integer> C = new ArrayList<Integer>();
+        C.add(1);
+        C.add(2);
+        C.add(3);
+
+        Iterator hi_C = C.iterator();
+        while(hi_C.hasNext()) {
+            System.out.println(hi_C.next());
+        }
+    }
+}
+
+```
+### <br/>
+
 
