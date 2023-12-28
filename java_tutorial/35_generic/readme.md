@@ -149,3 +149,4 @@ public class GenericDemo {
     }
 }
 ```
+#### ![image](https://github.com/Shin-jongwhan/java/assets/62974484/2d42254f-f67d-48cb-bb1d-b916c29f0afd)
