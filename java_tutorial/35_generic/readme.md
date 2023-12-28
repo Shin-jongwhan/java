@@ -75,5 +75,15 @@ public class GenericDemo {
 #### ![image](https://github.com/Shin-jongwhan/java/assets/62974484/52197fc5-9a77-4708-8354-009f1608063e)
 ### <br/>
 
-
+### 제네릭은 참조 데이터 타입에 대해서만 사용할 수 있다. 기본 데이터 타입에서는 사용할 수 없다.
+### 예를 들어 아래와 같이 바로 1 을 사용할 수 없다.
+```
+Person<EmployeeInfo, int> p1 = new Person<EmployeeInfo, int>(new EmployeeInfo(1), 1);
+```
+### 대신에 참조 데이터 타입 형태로 선언해준 후 넣어줄 수 있다.
+```
+Integer i = new Integer(10);
+Person<EmployeeInfo, Integer> p1 = new Person<EmployeeInfo, Integer>(e, i);
+```
+### <br/>
 
