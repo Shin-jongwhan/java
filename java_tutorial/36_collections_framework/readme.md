@@ -44,6 +44,7 @@ for(int i=0; i<al.size(); i++){
 ### <br/>
 
 ### 제네릭을 사용하면 명시해주지 않아도 된다.
+### 근데 내가 보기엔 이것도... 
 ```
 ArrayList<String> al = new ArrayList<String>();
 al.add("one");
@@ -55,5 +56,14 @@ for(int i=0; i<al.size(); i++){
 }
 ```
 ### <br/>
+
+## 프레임워크
+### 프레임워크는 다음과 같은 hierarchy 를 가지고 있다.
+### 가장 상위에 collections 와 map 이 있다.
+### set 은 집합이다. 중복 데이터를 원하지 않는 경우 사용한다.
+### key : value 형태의 데이터를 원한다면 map 을 사용한다.
+#### ![image](https://github.com/Shin-jongwhan/java/assets/62974484/58c9b9a0-dfaa-4d11-a57b-657a0e29e98f)
+### <br/>
+
 
 
