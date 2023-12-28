@@ -70,3 +70,10 @@ public class GenericDemo {
     }
 }
 ```
+### 다음과 같이 int 를 출력해야 하는데, String 으로 되어 있다.
+### 이러한 경우를 피하기 위해 데이터 타입을 뭘로 써야 할지 명시해줘야 하는데, 이 때 제네릭을 사용한다.
+#### ![image](https://github.com/Shin-jongwhan/java/assets/62974484/52197fc5-9a77-4708-8354-009f1608063e)
+### <br/>
+
+
+
