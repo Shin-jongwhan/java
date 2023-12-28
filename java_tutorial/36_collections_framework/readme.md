@@ -248,3 +248,26 @@ public class framework_ex {
 ### map 은 key : value 형태로 구성된 컨테이너다. 파이썬에서는 딕셔너리와 같다.
 #### ![image](https://github.com/Shin-jongwhan/java/assets/62974484/d3a30a41-2823-4469-bb77-44135d4d5662)
 ### <br/>
+
+### 예제
+```
+import java.util.HashMap;
+
+public class collection_map_ex {
+    public static void main(String[] args) {
+        HashMap<String, Integer> a = new HashMap<String, Integer>();
+        // key, value
+        a.put("one", 1);
+        a.put("two", 2);
+        a.put("three", 3);
+        a.put("four", 4);
+
+        // value 가져오기
+        System.out.println(a.get("one"));
+        System.out.println(a.get("two"));
+        System.out.println(a.get("three"));
+    }
+}
+```
+### <br/>
+
