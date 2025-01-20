@@ -18,4 +18,29 @@ java --version
 ### <br/>
 
 ### localhost:8080으로 접속해보자.
+### 처음 페이지에는 아무것도 쓰지 않아서 이런 에러 페이지가 나온다. 정상이다.
 #### ![image](https://github.com/user-attachments/assets/de62279a-1f97-4910-97f6-75375d588a08)
+### <br/>
+
+### 이제 controller라는 걸 만들어보자.
+### 아래는 /home 경로를 만든 것이다.
+```
+package com.example.demo;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class HomeController {
+
+    @GetMapping("/home")
+    public String home() {
+        return "Welcome to the home page!";
+    }
+}
+```
+#### ![image](https://github.com/user-attachments/assets/42f11183-5a7f-49e9-8dae-010fce6531c9)
+### <br/>
+
+### /home으로 이동하면 다음과 같이 나온다.
+#### ![image](https://github.com/user-attachments/assets/6de4514a-131c-4d36-b3d8-3eacbb082a48)
