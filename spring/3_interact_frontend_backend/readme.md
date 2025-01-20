@@ -56,11 +56,13 @@ public class GreetController {
     // 응답 객체 정의
     public static class Response {
         private String message;
-        
+
+        // init. class 호출 시 호출된다. 
         public Response(String message) {
             this.message = message;
         }
 
+        // GET
         public String getMessage() {
             return message;
         }
