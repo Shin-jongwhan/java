@@ -1,5 +1,6 @@
 ## front-end에서 back-end와 상호작용하기
 ### html 페이지 하나 만든다.
+### 이제 index.html이 생성되었으니 localhost:8080에서 에러 페이지는 안 나올 것이다.
 ### `index.html`
 ```
 <!DOCTYPE html>
@@ -32,6 +33,7 @@
 ### <br/>
 
 ### controller 하나 더 생성한다.
+### 실제로 상호작용이 되고 있는 건지 확인하기 위해 브라우저랑 이클립스 콘솔 둘 다에서 출력이 되는지 확인해보았다.
 ### `GreetController.java`
 ```
 package com.example.demo;
@@ -71,3 +73,8 @@ public class GreetController {
 ```
 #### ![image](https://github.com/user-attachments/assets/aa6c969b-3e60-4f50-bc7a-fa64e1392451)
 ### <br/>
+
+### 버튼을 클릭하면 브라우저와 이클립스 콘솔 둘 다에서 출력이 된다.
+
+https://github.com/user-attachments/assets/082308ea-c63d-4808-ba5b-a6d737c74a8e
+
