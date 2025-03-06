@@ -18,5 +18,11 @@
 ### main java 스크립트를 클릭하고 F5를 누르면 실행이 된다.
 #### ![image](https://github.com/user-attachments/assets/889059fe-2408-4bb7-854d-021f29edfd22)
 #### ![image](https://github.com/user-attachments/assets/e1677f07-7351-4d52-9ec2-541f3ab3f7cc)
+### <br/>
+
+### vscode 최상단 폴더에 .vscode/launch.json이라는 파일이 하나 생성 되는데, 여기에 args 등 실행에 필요한 설정을 할 수 있다.
+### 아래에서는 profiles라는 파라미터에 dev라는 값을 설정하였다. 나머지는 기본으로 자동으로 세팅된 것이다.
+#### ![image](https://github.com/user-attachments/assets/2ac6633b-d856-4625-be44-af1a4fbc12ad)
+
 
 ### <br/><br/><br>
