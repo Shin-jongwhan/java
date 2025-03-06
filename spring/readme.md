@@ -9,5 +9,19 @@
 
 ## Spring vs Spring boot
 ### 이것도 너무 궁금해서 10개 이상 블로그 글들을 찾아봤는데 설명이... 다 똑같다. 
-### 그래서 chatGPT한테 물어봄 ㅎㅎ
+#### https://github.com/Shin-jongwhan/java/tree/main/spring/spring_VS_spring_boot
 ### <br/><br/>
+
+## vs code - spring framework 이용 방법
+### 아래 패키지를 설치한다.
+#### ![image](https://github.com/user-attachments/assets/2bae841a-e876-4d5a-8d71-820e88a3a015)
+### <br/><br/>
+
+### F5를 누르면 실행이 된다. 파일을 어떤 것을 클릭하든 상관 없이 main script를 자동으로 인식하여 실행된다.
+#### ![image](https://github.com/user-attachments/assets/e1677f07-7351-4d52-9ec2-541f3ab3f7cc)
+### <br/>
+
+## vs code - launch.json
+### vs code로 실행하려면 vscode에서 'open folder' 한 폴더 최상단에 .vscode/launch.json이 자동으로 생긴다.
+### 여기에서 
+#### ![image](https://github.com/user-attachments/assets/9186e445-2c87-4a00-8600-bb17a25a4076)
